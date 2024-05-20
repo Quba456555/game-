@@ -8,21 +8,20 @@ from world import World, Battle
 
 #========================================
 def start_game():
-    # Tworzymy gracza
+    
     print("twojim zadaniem jest pokonac wszystkich nazguli i dobyc pierscien")
     player2 = Player2("Twojej", 100, 20,15)
 
-    # Tworzymy trzech Nazgulów
+    
     nazgul1 = Nazgul("Król Nazguli", 15, 30, 3, "Morgulskie ostrze")
     nazgul2 = Nazgul("Khamul", 25, 25, 6, "Czarny dart")
     nazgul3 = Nazgul("Adunaphel", 31, 28, 9, "Miecz")
 
-    # Gracz spotyka każdego z Nazgulów
+   
     player2.encounter_nazgul(nazgul1)
     player2.encounter_nazgul(nazgul2)
     player2.encounter_nazgul(nazgul3)
 
-    # Sprawdzamy, czy gracz przetrwał
     if player2.health > 0:
         print("Gratulacje! Pokonałeś wszystkich Nazgulów i zdobyłeś pierścień!")
     else:
@@ -101,7 +100,7 @@ class Gra:
         czarodziej = Czarodziej()
         print(f"Aktualna ilośc zlota: {self.zloto}")
         self.kup_bron()
-        bron = self.ekwipunek[-1]  # Gracz używa ostatnio zakupionej broni
+        bron = self.ekwipunek[-1] 
         self.wyswietl_ekwipunek()
         czarodziej.interakcja_z_czarodziejem(bron)
 
@@ -295,7 +294,7 @@ class Gra:
                 time.sleep(1)
                 break
         
-            # Symulacja ataku bossa 2
+           
             print("\nBoss 2 atakuje!")
             time.sleep(1)
             obrazenia_bossa = random.randint(1, 10)
@@ -361,7 +360,7 @@ class Gra:
         else:
             print("Nieprawidłowy wybór.")
 
-    # Uruchomienie gry
+    
     
 
 
@@ -479,6 +478,6 @@ class Gra:
 
         
 
-      
+        print("Zdobyłes najpotezniejszy atefakt jestes nie pokonany, wygrales gre ")
         print("\nGAME OVER!")
-        print("Mam nadzieję, że gra Ci się podobała :-)")
+        
