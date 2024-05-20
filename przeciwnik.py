@@ -76,7 +76,7 @@ class Czarodziej:
                 return True
             else:
                 print("Czarodziej jest wpieniony!\n")
-                input("Naciśnij Enter, dojechać czarodzieja\n")
+                input("Naciśnij Enter,aby dojechać czarodzieja\n")
 
         return False
 
@@ -146,7 +146,7 @@ class Nazgul(Character):
         print(f"{self.name} with {self.weapon} strikes {enemy.name}!")
         enemy.take_damage(self.attack)
 
-# Tworzymy trzech Nazgulów
+
 nazgul1 = Nazgul("Witch-king", 150, 30, 20, "Morgul Blade")
 nazgul2 = Nazgul("Khamul", 130, 25, 15, "Black Dart")
 nazgul3 = Nazgul("Adunaphel", 140, 28, 18, "Sword")
