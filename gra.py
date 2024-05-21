@@ -4,6 +4,7 @@ from przeciwnik import Przeciwnik, Czarodziej, BagnistaZaba1, BagnistaZaba2
 from boss import Boss1, Boss2, Boss3
 from gracz import Gracz, Player ,Player2 ,Nazgul
 from world import World, Battle
+from  labirynt import Labirynt
 
 
 #========================================
@@ -396,9 +397,14 @@ class Gra:
                 break
 
     def logika_gry(self):
-
+        # start_game()
+        # main2()
+        # labirynt = Labirynt()
+        # labirynt.start_gry()
        #==============================
         #start_game()
+
+        
         #main2()
 
         print("\nWygraj 5 poziomów aby przejść dalej!\n")
@@ -472,12 +478,13 @@ class Gra:
         
         self.sciezka()
 
-        main2()
-
         start_game()
 
+        main2()
         
+        labirynt = Labirynt()
+        labirynt.start_gry()
 
-        print("Zdobyłes najpotezniejszy atefakt jestes nie pokonany, wygrales gre ")
+        print("Zdobyłes skarb wygrales gre ")
         print("\nGAME OVER!")
         
