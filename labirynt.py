@@ -3,7 +3,7 @@ import os
 class Labirynt:
     
     def __init__(self):
-        # Definiowanie większego labiryntu
+        
         self.labirynt = [
             "#############################",
             "#  S     #       #          #",
@@ -52,7 +52,7 @@ class Labirynt:
         return self.labirynt[self.gracz_y][self.gracz_x] == 'S'
 
     def start_gry(self):
-        # Główna pętla gry
+        
         while True:
             self.drukuj_labirynt()
             if self.sprawdz_zwyciestwo():
